@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         tvScore = findViewById(R.id.tv_score);
     }
 
-
     public void showScore(){
         tvScore.setText(score+"");
     }
