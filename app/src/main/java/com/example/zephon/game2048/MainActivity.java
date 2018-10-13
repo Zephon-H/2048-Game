@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
     public MainActivity(){
         mainActivity = this;
     }
+
     private TextView tvScore;
     private int score = 0;
     @Override
@@ -17,14 +18,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvScore = findViewById(R.id.tv_score);
-
     }
 
 
     public void showScore(){
         tvScore.setText(score+"");
     }
-
     public void clearScore(){
         score = 0;
         showScore();

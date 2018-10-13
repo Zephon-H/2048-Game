@@ -131,7 +131,6 @@ public class GameView extends GridLayout {
                         if(cardMap[x][y].getNum()<=0){
                             cardMap[x][y].setNum(cardMap[i][y].getNum());
                             cardMap[i][y].setNum(0);
-                            x--;
                             merge = true;
                         }else if(cardMap[x][y].equals(cardMap[i][y])){
                             cardMap[x][y].setNum(cardMap[x][y].getNum()*2);
@@ -161,7 +160,6 @@ public class GameView extends GridLayout {
                             cardMap[x][y].setNum(cardMap[i][y].getNum());
                             cardMap[i][y].setNum(0);
 
-                            x++;
                             merge = true;
                         }else if(cardMap[x][y].equals(cardMap[i][y])){
                             cardMap[x][y].setNum(cardMap[x][y].getNum()*2);
@@ -190,7 +188,6 @@ public class GameView extends GridLayout {
                         if(cardMap[x][y].getNum()<=0){
                             cardMap[x][y].setNum(cardMap[x][j].getNum());
                             cardMap[x][j].setNum(0);
-                            y++;
                             merge = true;
                         }else if(cardMap[x][y].equals(cardMap[x][j])){
                             cardMap[x][y].setNum(cardMap[x][y].getNum()*2);
@@ -219,8 +216,6 @@ public class GameView extends GridLayout {
                         if(cardMap[x][y].getNum()<=0){
                             cardMap[x][y].setNum(cardMap[x][j].getNum());
                             cardMap[x][j].setNum(0);
-
-                            y++;
                             merge = true;
                         }else if(cardMap[x][y].equals(cardMap[x][j])){
                             cardMap[x][y].setNum(cardMap[x][y].getNum()*2);

@@ -9,9 +9,9 @@ import android.widget.TextView;
 public class Card extends FrameLayout {
     public Card(Context context) {
         super(context);
-
-
+        //动态添加TextView
         label = new TextView(getContext());
+        //设置TextView的相关属性
         label.setTextSize(42);
         label.setGravity(Gravity.CENTER);
         label.setBackgroundColor(0x33ffffff);
@@ -24,6 +24,7 @@ public class Card extends FrameLayout {
 
         setNum(0);
     }
+
     private int num=0;
 
     public void setNum(int num) {
